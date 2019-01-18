@@ -17,6 +17,12 @@ contract('Croesus', (accounts) => {
             MAX_GAS);
     });
 
+    it('should not deploy with value', () => {
+        return expectedExceptionPromise(
+            () => Croesus.new({ from: accounts[0], gas: MAX_GAS, value: 1 }),
+            MAX_GAS);
+    });
+
     it('should deploy with a balance', async () => {
         const currentNonce = await web3.eth.getTransactionCountPromise(accounts[0]);
         const futureAddress = ethUtil.bufferToHex(ethUtil.generateAddress(accounts[0], currentNonce + 1));
