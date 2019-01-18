@@ -470,9 +470,9 @@
   },
   "networks": {
     "3": {
-      "address": "0x70450890C289a1D97c9dD4DB526692d1E2aF1dC3",
-      "updated_at": 1547810718954,
-      "transactionHash": "0x6dbfd3f5bf37cf0bdcba1aa3d54528fb37dad148a32da6bbe46f39defab2235c"
+      "address": "0xA642EbB51B26C8772be155c22871e328d2934EEF",
+      "updated_at": 1547810909548,
+      "transactionHash": "0x70d61b4d2216b1c0072ec2c48804279371c8fd109c5ca0e2002d884f548ea66d"
     }
   },
   "schemaVersion": "3.0.1",
