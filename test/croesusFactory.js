@@ -19,7 +19,7 @@ contract('CroesusFactory', (accounts) => {
 
     it('should fail to win without balance', () => {
         return expectedExceptionPromise(
-            () => factory.tryToWin({ from: accounts[0], gas: MAX_GAS }),
+            () => factory.tryToWin(web3.utils.fromUtf8("tadaaa"), { from: accounts[0], gas: MAX_GAS }),
             MAX_GAS);
     });
 
@@ -27,7 +27,7 @@ contract('CroesusFactory', (accounts) => {
         const currentFactoryNonce = await web3.eth.getTransactionCountPromise(factory.address);
         const futureAddress = ethUtil.bufferToHex(ethUtil.generateAddress(factory.address, currentFactoryNonce));
         await web3.eth.sendTransactionPromise({ from: accounts[0], to: futureAddress, value: 1 });
-        const txObjWin = await factory.tryToWin({ from: accounts[0] });
+        const txObjWin = await factory.tryToWin(web3.utils.fromUtf8("tadaaa"), { from: accounts[0] });
         const won = await factory.winners(accounts[0]);
         
         assert.isTrue(txObjWin.receipt.status);
@@ -38,6 +38,7 @@ contract('CroesusFactory', (accounts) => {
 
         assert.strictEqual(event.args.sender, accounts[0]);
         assert.strictEqual(event.args.croesus.toLowerCase(), futureAddress);
+        assert.strictEqual(web3.utils.toUtf8(event.args.braggingRights), "tadaaa");
     });
 
 });
