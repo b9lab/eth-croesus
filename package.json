@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "truffle": "^5.0.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "ethereumjs-util": "^6.0.0"
   }
 }
