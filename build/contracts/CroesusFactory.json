@@ -57,14 +57,14 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506102aa806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063287b8a6d146100515780636bd5450a1461008c575b600080fd5b34801561005d57600080fd5b5061008a6004803603602081101561007457600080fd5b81019080803590602001909291905050506100f5565b005b34801561009857600080fd5b506100db600480360360208110156100af57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b604051808215151515815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506101546101f8565b604051809103906000f080158015610170573d6000803e3d6000fd5b5073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f7e1ab0a1684037c2de950b3ac3e654613f269bc5c5d8049f30b39985da942e98836040518082815260200191505060405180910390a350565b60006020528060005260406000206000915054906101000a900460ff1681565b6040516077806102088339019056fe6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a7230582089eb7ffd53c175a140faeaa1abd1c7bbe29a0e02f1d6354d787fe6c3a27a9fca0029a165627a7a72305820df168cb205bf71b9dbc4997e929bd35493f51be70efbc824bc7c3036e0f8325f0029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063287b8a6d146100515780636bd5450a1461008c575b600080fd5b34801561005d57600080fd5b5061008a6004803603602081101561007457600080fd5b81019080803590602001909291905050506100f5565b005b34801561009857600080fd5b506100db600480360360208110156100af57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b604051808215151515815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506101546101f8565b604051809103906000f080158015610170573d6000803e3d6000fd5b5073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f7e1ab0a1684037c2de950b3ac3e654613f269bc5c5d8049f30b39985da942e98836040518082815260200191505060405180910390a350565b60006020528060005260406000206000915054906101000a900460ff1681565b6040516077806102088339019056fe6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a7230582089eb7ffd53c175a140faeaa1abd1c7bbe29a0e02f1d6354d787fe6c3a27a9fca0029a165627a7a72305820df168cb205bf71b9dbc4997e929bd35493f51be70efbc824bc7c3036e0f8325f0029",
-  "sourceMap": "76:340:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;76:340:1;;;;;;;",
-  "deployedSourceMap": "76:340:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;249:165;;8:9:-1;5:2;;;30:1;27;20:12;5:2;249:165:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;249:165:1;;;;;;;;;;;;;;;;;;;;106:40;;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:40:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;106:40:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;249:165;330:4;308:7;:19;316:10;308:19;;;;;;;;;;;;;;;;:26;;;;;;;;;;;;;;;;;;376:13;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;376:13:1;349:58;;356:10;349:58;;;392:14;349:58;;;;;;;;;;;;;;;;;;249:165;:::o;106:40::-;;;;;;;;;;;;;;;;;;;;;;:::o;76:340::-;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.25 <0.6.0;\n\nimport { Croesus } from \"./Croesus.sol\";\n\ncontract CroesusFactory {\n    mapping (address => bool) public winners;\n    \n    event LogWon(address indexed sender, address indexed croesus, bytes32 braggingRights);\n\n    function tryToWin(bytes32 braggingRights) public {\n        winners[msg.sender] = true;\n        emit LogWon(msg.sender, address(new Croesus()), braggingRights);\n    }\n}",
-  "sourcePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b506102aa806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063287b8a6d146100515780636bd5450a1461008c575b600080fd5b34801561005d57600080fd5b5061008a6004803603602081101561007457600080fd5b81019080803590602001909291905050506100f5565b005b34801561009857600080fd5b506100db600480360360208110156100af57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b604051808215151515815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506101546101f8565b604051809103906000f080158015610170573d6000803e3d6000fd5b5073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f7e1ab0a1684037c2de950b3ac3e654613f269bc5c5d8049f30b39985da942e98836040518082815260200191505060405180910390a350565b60006020528060005260406000206000915054906101000a900460ff1681565b6040516077806102088339019056fe6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a72305820505a87506671e35c68fc34bc4144c4bcbd303fb93813a9276d543b1db20216400029a165627a7a72305820c172d4bd28e7f92b37cec45ad6336dd4a093fe58a7949da5095a68a27e3e7e710029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063287b8a6d146100515780636bd5450a1461008c575b600080fd5b34801561005d57600080fd5b5061008a6004803603602081101561007457600080fd5b81019080803590602001909291905050506100f5565b005b34801561009857600080fd5b506100db600480360360208110156100af57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b604051808215151515815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506101546101f8565b604051809103906000f080158015610170573d6000803e3d6000fd5b5073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f7e1ab0a1684037c2de950b3ac3e654613f269bc5c5d8049f30b39985da942e98836040518082815260200191505060405180910390a350565b60006020528060005260406000206000915054906101000a900460ff1681565b6040516077806102088339019056fe6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a72305820505a87506671e35c68fc34bc4144c4bcbd303fb93813a9276d543b1db20216400029a165627a7a72305820c172d4bd28e7f92b37cec45ad6336dd4a093fe58a7949da5095a68a27e3e7e710029",
+  "sourceMap": "66:340:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:340:1;;;;;;;",
+  "deployedSourceMap": "66:340:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:165;;8:9:-1;5:2;;;30:1;27;20:12;5:2;239:165:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;239:165:1;;;;;;;;;;;;;;;;;;;;96:40;;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:40:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;96:40:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:165;320:4;298:7;:19;306:10;298:19;;;;;;;;;;;;;;;;:26;;;;;;;;;;;;;;;;;;366:13;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;366:13:1;339:58;;346:10;339:58;;;382:14;339:58;;;;;;;;;;;;;;;;;;239:165;:::o;96:40::-;;;;;;;;;;;;;;;;;;;;;;:::o;66:340::-;;;;;;;;;;:::o",
+  "source": "pragma solidity 0.5.0;\n\nimport { Croesus } from \"./Croesus.sol\";\n\ncontract CroesusFactory {\n    mapping (address => bool) public winners;\n    \n    event LogWon(address indexed sender, address indexed croesus, bytes32 braggingRights);\n\n    function tryToWin(bytes32 braggingRights) public {\n        winners[msg.sender] = true;\n        emit LogWon(msg.sender, address(new Croesus()), braggingRights);\n    }\n}",
+  "sourcePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
   "ast": {
-    "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
+    "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
     "exportedSymbols": {
       "CroesusFactory": [
         56
@@ -77,24 +77,20 @@
         "id": 17,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:1"
+        "src": "0:22:1"
       },
       {
-        "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/Croesus.sol",
+        "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/Croesus.sol",
         "file": "./Croesus.sol",
         "id": 19,
         "nodeType": "ImportDirective",
         "scope": 57,
         "sourceUnit": 16,
-        "src": "34:40:1",
+        "src": "24:40:1",
         "symbolAliases": [
           {
             "foreign": 18,
@@ -124,7 +120,7 @@
             "name": "winners",
             "nodeType": "VariableDeclaration",
             "scope": 56,
-            "src": "106:40:1",
+            "src": "96:40:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -137,14 +133,14 @@
                 "id": 20,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "115:7:1",
+                "src": "105:7:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "106:25:1",
+              "src": "96:25:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
@@ -153,7 +149,7 @@
                 "id": 21,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "126:4:1",
+                "src": "116:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -180,7 +176,7 @@
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "170:22:1",
+                  "src": "160:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -191,7 +187,7 @@
                     "id": 24,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "170:7:1",
+                    "src": "160:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -208,7 +204,7 @@
                   "name": "croesus",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "194:23:1",
+                  "src": "184:23:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -219,7 +215,7 @@
                     "id": 26,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "194:7:1",
+                    "src": "184:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -236,7 +232,7 @@
                   "name": "braggingRights",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "219:22:1",
+                  "src": "209:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -247,7 +243,7 @@
                     "id": 28,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "219:7:1",
+                    "src": "209:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -257,15 +253,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "169:73:1"
+              "src": "159:73:1"
             },
-            "src": "157:86:1"
+            "src": "147:86:1"
           },
           {
             "body": {
               "id": 54,
               "nodeType": "Block",
-              "src": "298:116:1",
+              "src": "288:116:1",
               "statements": [
                 {
                   "expression": {
@@ -284,7 +280,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "308:7:1",
+                        "src": "298:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
@@ -300,7 +296,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 128,
-                          "src": "316:3:1",
+                          "src": "306:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -314,7 +310,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "316:10:1",
+                        "src": "306:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -325,7 +321,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "308:19:1",
+                      "src": "298:19:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -343,7 +339,7 @@
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "330:4:1",
+                      "src": "320:4:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -351,7 +347,7 @@
                       },
                       "value": "true"
                     },
-                    "src": "308:26:1",
+                    "src": "298:26:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -359,7 +355,7 @@
                   },
                   "id": 42,
                   "nodeType": "ExpressionStatement",
-                  "src": "308:26:1"
+                  "src": "298:26:1"
                 },
                 {
                   "eventCall": {
@@ -374,7 +370,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 128,
-                          "src": "356:3:1",
+                          "src": "346:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -388,7 +384,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "356:10:1",
+                        "src": "346:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -408,7 +404,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "NewExpression",
-                              "src": "376:11:1",
+                              "src": "366:11:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Croesus_$15_$",
                                 "typeString": "function () returns (contract Croesus)"
@@ -419,7 +415,7 @@
                                 "name": "Croesus",
                                 "nodeType": "UserDefinedTypeName",
                                 "referencedDeclaration": 15,
-                                "src": "380:7:1",
+                                "src": "370:7:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Croesus_$15",
                                   "typeString": "contract Croesus"
@@ -434,7 +430,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "376:13:1",
+                            "src": "366:13:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Croesus_$15",
                               "typeString": "contract Croesus"
@@ -454,7 +450,7 @@
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "368:7:1",
+                          "src": "358:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
@@ -469,7 +465,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "368:22:1",
+                        "src": "358:22:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -482,7 +478,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 33,
-                        "src": "392:14:1",
+                        "src": "382:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -509,7 +505,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 31,
-                      "src": "349:6:1",
+                      "src": "339:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,address,bytes32)"
@@ -523,7 +519,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "349:58:1",
+                    "src": "339:58:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -531,7 +527,7 @@
                   },
                   "id": 53,
                   "nodeType": "EmitStatement",
-                  "src": "344:63:1"
+                  "src": "334:63:1"
                 }
               ]
             },
@@ -552,7 +548,7 @@
                   "name": "braggingRights",
                   "nodeType": "VariableDeclaration",
                   "scope": 55,
-                  "src": "267:22:1",
+                  "src": "257:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -563,7 +559,7 @@
                     "id": 32,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "267:7:1",
+                    "src": "257:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -573,29 +569,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "266:24:1"
+              "src": "256:24:1"
             },
             "returnParameters": {
               "id": 35,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "298:0:1"
+              "src": "288:0:1"
             },
             "scope": 56,
-            "src": "249:165:1",
+            "src": "239:165:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 57,
-        "src": "76:340:1"
+        "src": "66:340:1"
       }
     ],
-    "src": "0:416:1"
+    "src": "0:406:1"
   },
   "legacyAST": {
-    "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
+    "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/CroesusFactory.sol",
     "exportedSymbols": {
       "CroesusFactory": [
         56
@@ -608,24 +604,20 @@
         "id": 17,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:1"
+        "src": "0:22:1"
       },
       {
-        "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/Croesus.sol",
+        "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/Croesus.sol",
         "file": "./Croesus.sol",
         "id": 19,
         "nodeType": "ImportDirective",
         "scope": 57,
         "sourceUnit": 16,
-        "src": "34:40:1",
+        "src": "24:40:1",
         "symbolAliases": [
           {
             "foreign": 18,
@@ -655,7 +647,7 @@
             "name": "winners",
             "nodeType": "VariableDeclaration",
             "scope": 56,
-            "src": "106:40:1",
+            "src": "96:40:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -668,14 +660,14 @@
                 "id": 20,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "115:7:1",
+                "src": "105:7:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "106:25:1",
+              "src": "96:25:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
@@ -684,7 +676,7 @@
                 "id": 21,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "126:4:1",
+                "src": "116:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -711,7 +703,7 @@
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "170:22:1",
+                  "src": "160:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -722,7 +714,7 @@
                     "id": 24,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "170:7:1",
+                    "src": "160:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -739,7 +731,7 @@
                   "name": "croesus",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "194:23:1",
+                  "src": "184:23:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -750,7 +742,7 @@
                     "id": 26,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "194:7:1",
+                    "src": "184:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -767,7 +759,7 @@
                   "name": "braggingRights",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "219:22:1",
+                  "src": "209:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -778,7 +770,7 @@
                     "id": 28,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "219:7:1",
+                    "src": "209:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -788,15 +780,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "169:73:1"
+              "src": "159:73:1"
             },
-            "src": "157:86:1"
+            "src": "147:86:1"
           },
           {
             "body": {
               "id": 54,
               "nodeType": "Block",
-              "src": "298:116:1",
+              "src": "288:116:1",
               "statements": [
                 {
                   "expression": {
@@ -815,7 +807,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "308:7:1",
+                        "src": "298:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
@@ -831,7 +823,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 128,
-                          "src": "316:3:1",
+                          "src": "306:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -845,7 +837,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "316:10:1",
+                        "src": "306:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -856,7 +848,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "308:19:1",
+                      "src": "298:19:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -874,7 +866,7 @@
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "330:4:1",
+                      "src": "320:4:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -882,7 +874,7 @@
                       },
                       "value": "true"
                     },
-                    "src": "308:26:1",
+                    "src": "298:26:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -890,7 +882,7 @@
                   },
                   "id": 42,
                   "nodeType": "ExpressionStatement",
-                  "src": "308:26:1"
+                  "src": "298:26:1"
                 },
                 {
                   "eventCall": {
@@ -905,7 +897,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 128,
-                          "src": "356:3:1",
+                          "src": "346:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -919,7 +911,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "356:10:1",
+                        "src": "346:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -939,7 +931,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "NewExpression",
-                              "src": "376:11:1",
+                              "src": "366:11:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Croesus_$15_$",
                                 "typeString": "function () returns (contract Croesus)"
@@ -950,7 +942,7 @@
                                 "name": "Croesus",
                                 "nodeType": "UserDefinedTypeName",
                                 "referencedDeclaration": 15,
-                                "src": "380:7:1",
+                                "src": "370:7:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Croesus_$15",
                                   "typeString": "contract Croesus"
@@ -965,7 +957,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "376:13:1",
+                            "src": "366:13:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Croesus_$15",
                               "typeString": "contract Croesus"
@@ -985,7 +977,7 @@
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "368:7:1",
+                          "src": "358:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
@@ -1000,7 +992,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "368:22:1",
+                        "src": "358:22:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1013,7 +1005,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 33,
-                        "src": "392:14:1",
+                        "src": "382:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1040,7 +1032,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 31,
-                      "src": "349:6:1",
+                      "src": "339:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,address,bytes32)"
@@ -1054,7 +1046,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "349:58:1",
+                    "src": "339:58:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1062,7 +1054,7 @@
                   },
                   "id": 53,
                   "nodeType": "EmitStatement",
-                  "src": "344:63:1"
+                  "src": "334:63:1"
                 }
               ]
             },
@@ -1083,7 +1075,7 @@
                   "name": "braggingRights",
                   "nodeType": "VariableDeclaration",
                   "scope": 55,
-                  "src": "267:22:1",
+                  "src": "257:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1094,7 +1086,7 @@
                     "id": 32,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "267:7:1",
+                    "src": "257:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1104,26 +1096,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "266:24:1"
+              "src": "256:24:1"
             },
             "returnParameters": {
               "id": 35,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "298:0:1"
+              "src": "288:0:1"
             },
             "scope": 56,
-            "src": "249:165:1",
+            "src": "239:165:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 57,
-        "src": "76:340:1"
+        "src": "66:340:1"
       }
     ],
-    "src": "0:416:1"
+    "src": "0:406:1"
   },
   "compiler": {
     "name": "solc",
@@ -1136,8 +1128,8 @@
       "transactionHash": "0x534730325e0a20276f6f3176684a80dbfcec3c4d0973666eb2e3cd20b79f67cf"
     }
   },
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-18T11:15:20.562Z",
+  "schemaVersion": "3.0.3",
+  "updatedAt": "2019-04-05T14:50:12.947Z",
   "devdoc": {
     "methods": {}
   },

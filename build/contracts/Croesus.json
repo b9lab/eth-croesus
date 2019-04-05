@@ -8,14 +8,14 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a7230582089eb7ffd53c175a140faeaa1abd1c7bbe29a0e02f1d6354d787fe6c3a27a9fca0029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582089eb7ffd53c175a140faeaa1abd1c7bbe29a0e02f1d6354d787fe6c3a27a9fca0029",
-  "sourceMap": "34:97:0:-;;;57:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:72:0;120:1;104:4;96:21;;;:25;88:34;;;;;;;;34:97;;;;;;",
-  "deployedSourceMap": "34:97:0:-;;;;;",
-  "source": "pragma solidity >=0.4.25 <0.6.0;\n\ncontract Croesus {\n    constructor() public {\n        require(address(this).balance > 0);\n    }\n}",
-  "sourcePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/Croesus.sol",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060003073ffffffffffffffffffffffffffffffffffffffff1631111515603557600080fd5b60358060426000396000f3fe6080604052600080fdfea165627a7a72305820505a87506671e35c68fc34bc4144c4bcbd303fb93813a9276d543b1db20216400029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820505a87506671e35c68fc34bc4144c4bcbd303fb93813a9276d543b1db20216400029",
+  "sourceMap": "24:97:0:-;;;47:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;47:72:0;110:1;94:4;86:21;;;:25;78:34;;;;;;;;24:97;;;;;;",
+  "deployedSourceMap": "24:97:0:-;;;;;",
+  "source": "pragma solidity 0.5.0;\n\ncontract Croesus {\n    constructor() public {\n        require(address(this).balance > 0);\n    }\n}",
+  "sourcePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/Croesus.sol",
   "ast": {
-    "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/Croesus.sol",
+    "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/Croesus.sol",
     "exportedSymbols": {
       "Croesus": [
         15
@@ -28,15 +28,11 @@
         "id": 1,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:0"
+        "src": "0:22:0"
       },
       {
         "baseContracts": [],
@@ -55,7 +51,7 @@
             "body": {
               "id": 13,
               "nodeType": "Block",
-              "src": "78:51:0",
+              "src": "68:51:0",
               "statements": [
                 {
                   "expression": {
@@ -84,7 +80,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 141,
-                                "src": "104:4:0",
+                                "src": "94:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Croesus_$15",
                                   "typeString": "contract Croesus"
@@ -104,7 +100,7 @@
                               "isPure": true,
                               "lValueRequested": false,
                               "nodeType": "ElementaryTypeNameExpression",
-                              "src": "96:7:0",
+                              "src": "86:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_address_$",
                                 "typeString": "type(address)"
@@ -119,7 +115,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "96:13:0",
+                            "src": "86:13:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -133,7 +129,7 @@
                           "memberName": "balance",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "96:21:0",
+                          "src": "86:21:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -151,7 +147,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "120:1:0",
+                          "src": "110:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -159,7 +155,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "96:25:0",
+                        "src": "86:25:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -181,7 +177,7 @@
                         132
                       ],
                       "referencedDeclaration": 131,
-                      "src": "88:7:0",
+                      "src": "78:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -195,7 +191,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "88:34:0",
+                    "src": "78:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -203,7 +199,7 @@
                   },
                   "id": 12,
                   "nodeType": "ExpressionStatement",
-                  "src": "88:34:0"
+                  "src": "78:34:0"
                 }
               ]
             },
@@ -218,29 +214,29 @@
               "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "68:2:0"
+              "src": "58:2:0"
             },
             "returnParameters": {
               "id": 3,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "78:0:0"
+              "src": "68:0:0"
             },
             "scope": 15,
-            "src": "57:72:0",
+            "src": "47:72:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 16,
-        "src": "34:97:0"
+        "src": "24:97:0"
       }
     ],
-    "src": "0:131:0"
+    "src": "0:121:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/xavier/DAPPS/b9internal/croesus/contracts/Croesus.sol",
+    "absolutePath": "/home/vagrant/DAPPS/b9internal/croesus/contracts/Croesus.sol",
     "exportedSymbols": {
       "Croesus": [
         15
@@ -253,15 +249,11 @@
         "id": 1,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:0"
+        "src": "0:22:0"
       },
       {
         "baseContracts": [],
@@ -280,7 +272,7 @@
             "body": {
               "id": 13,
               "nodeType": "Block",
-              "src": "78:51:0",
+              "src": "68:51:0",
               "statements": [
                 {
                   "expression": {
@@ -309,7 +301,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 141,
-                                "src": "104:4:0",
+                                "src": "94:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Croesus_$15",
                                   "typeString": "contract Croesus"
@@ -329,7 +321,7 @@
                               "isPure": true,
                               "lValueRequested": false,
                               "nodeType": "ElementaryTypeNameExpression",
-                              "src": "96:7:0",
+                              "src": "86:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_address_$",
                                 "typeString": "type(address)"
@@ -344,7 +336,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "96:13:0",
+                            "src": "86:13:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -358,7 +350,7 @@
                           "memberName": "balance",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "96:21:0",
+                          "src": "86:21:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -376,7 +368,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "120:1:0",
+                          "src": "110:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -384,7 +376,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "96:25:0",
+                        "src": "86:25:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -406,7 +398,7 @@
                         132
                       ],
                       "referencedDeclaration": 131,
-                      "src": "88:7:0",
+                      "src": "78:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -420,7 +412,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "88:34:0",
+                    "src": "78:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -428,7 +420,7 @@
                   },
                   "id": 12,
                   "nodeType": "ExpressionStatement",
-                  "src": "88:34:0"
+                  "src": "78:34:0"
                 }
               ]
             },
@@ -443,26 +435,26 @@
               "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "68:2:0"
+              "src": "58:2:0"
             },
             "returnParameters": {
               "id": 3,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "78:0:0"
+              "src": "68:0:0"
             },
             "scope": 15,
-            "src": "57:72:0",
+            "src": "47:72:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 16,
-        "src": "34:97:0"
+        "src": "24:97:0"
       }
     ],
-    "src": "0:131:0"
+    "src": "0:121:0"
   },
   "compiler": {
     "name": "solc",
@@ -475,8 +467,8 @@
       "transactionHash": "0x70d61b4d2216b1c0072ec2c48804279371c8fd109c5ca0e2002d884f548ea66d"
     }
   },
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-18T11:15:20.561Z",
+  "schemaVersion": "3.0.3",
+  "updatedAt": "2019-04-05T14:50:12.946Z",
   "devdoc": {
     "methods": {}
   },
