@@ -1,13 +1,8 @@
 const CroesusFactory = artifacts.require("CroesusFactory");
 
-const Promise = require("bluebird");
 const ethUtil = require('ethereumjs-util/');
 const expectedExceptionPromise = require("../utils/expectedExceptionPromise.js");
 const MAX_GAS = 3000000;
-
-if (typeof web3.eth.getAccountsPromise !== "function") {
-    Promise.promisifyAll(web3.eth, { suffix: "Promise" });
-}
 
 contract('CroesusFactory', (accounts) => {
 
@@ -24,9 +19,9 @@ contract('CroesusFactory', (accounts) => {
     });
 
     it('should win with a balance', async () => {
-        const currentFactoryNonce = await web3.eth.getTransactionCountPromise(factory.address);
+        const currentFactoryNonce = await web3.eth.getTransactionCount(factory.address);
         const futureAddress = ethUtil.bufferToHex(ethUtil.generateAddress(factory.address, currentFactoryNonce));
-        await web3.eth.sendTransactionPromise({ from: accounts[0], to: futureAddress, value: 1 });
+        await web3.eth.sendTransaction({ from: accounts[0], to: futureAddress, value: 1 });
         const txObjWin = await factory.tryToWin(web3.utils.fromUtf8("tadaaa"), { from: accounts[0] });
         const won = await factory.winners(accounts[0]);
         
